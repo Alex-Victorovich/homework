@@ -1,0 +1,12 @@
+<form class= "d-flex justify-content-center" enctype="multipart/form-data" action="/adress_book">
+   <p>Загрузите ваши фотографии </p>
+   <p><input name = 'name' type="file" name="photo" multiple accept="image/*,image/jpeg">
+   <input type="submit" value="Отправить"></p>
+  </form>
+  <hr>
+
+  <div>
+      {{#each photo}}
+      <img href="{{this}}" alt="pic">
+      {{/each}}
+  </div>
